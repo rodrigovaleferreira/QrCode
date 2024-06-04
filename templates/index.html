@@ -6,10 +6,74 @@
     <title>Formulário</title>
 </head>
 <body>
+    <header>
+        Cultural
+    </header>
     <h1>Insira um nome:</h1>
     <form action="/submit" method="post">
         <input type="text" name="name" required>
         <button type="submit">Enviar</button>
     </form>
+
+
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: gray;
+            color: white;
+            padding: 10px;
+            text-align: left;
+            font-size: 24px;
+            font-weight: 700;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h1 {
+            margin: 20px 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: gray;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkgray;
+        }
+    </style>
 </body>
 </html>
